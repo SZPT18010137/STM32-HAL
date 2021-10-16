@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"gpio_button\startup_stm32f103xb.o"
+"gpio_button\main.o"
+"gpio_button\gpio.o"
+"gpio_button\stm32f1xx_it.o"
+"gpio_button\stm32f1xx_hal_msp.o"
+"gpio_button\stm32f1xx_hal_gpio_ex.o"
+"gpio_button\stm32f1xx_hal_tim.o"
+"gpio_button\stm32f1xx_hal_tim_ex.o"
+"gpio_button\stm32f1xx_hal.o"
+"gpio_button\stm32f1xx_hal_rcc.o"
+"gpio_button\stm32f1xx_hal_rcc_ex.o"
+"gpio_button\stm32f1xx_hal_gpio.o"
+"gpio_button\stm32f1xx_hal_dma.o"
+"gpio_button\stm32f1xx_hal_cortex.o"
+"gpio_button\stm32f1xx_hal_pwr.o"
+"gpio_button\stm32f1xx_hal_flash.o"
+"gpio_button\stm32f1xx_hal_flash_ex.o"
+"gpio_button\stm32f1xx_hal_exti.o"
+"gpio_button\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "GPIO_BUTTON\GPIO_BUTTON.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GPIO_BUTTON.map" -o GPIO_BUTTON\GPIO_BUTTON.axf
